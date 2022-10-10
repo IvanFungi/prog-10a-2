@@ -1,2 +1,5 @@
-glink=int(input("give me guy a number, pretty plese"))
-if glink>12345
+sk1=int(input("ievadirtskaitli: "))
+if sk1>10:
+  print("skaitlis ir liels")
+else:
+  print("skaitlis ir mazs")
