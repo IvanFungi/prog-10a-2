@@ -1,0 +1,2 @@
+glink=int(input("give me guy a number, pretty plese"))
+if glink>12345
