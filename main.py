@@ -12,6 +12,9 @@
 #  x1=(-b+sqrt(d))/2*a
 #  x2=(-b-sqrt(d))/2*a
 #  print("Two roots 1x =",x1,"2x =",x2)
+
+
+
 A=int(input("First edge's degree: "))
 B=int(input("Second edge's degree: "))
 C=int(input("Third edge's degree: "))
@@ -22,9 +25,9 @@ elif T<180:
   print("Incorrect degre ammount")
 elif A==B and B==C:
   print("Equal triangle")
-elif A or B or C>90:
+elif A>90 or B>90 or C>90:
   print("Obtuse triangle")
-elif A or B or C==90:
+elif A==90 or B==90 or C==90:
   print("Right triangle")
 else:
   print("Just kinda a triangle")
