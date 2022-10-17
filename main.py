@@ -66,19 +66,46 @@
 
 
 
-x=int(input("I'll need a first coordinate (x): "))
-y=int(input("And a second one (y): "))
-if x==0 and y!=0:
-  print("The coordinate is on plane x. Coordinates:", x,y)
-elif x!=0 and y==0:
-  print("The coordinate is on plane y. Coordinates:", x,y)
-elif x==0 and y==0:
-  print("The coordinate is in the middle. Coordinates:", x,y)
-elif x>0 and y>0:
-  print("The coordinate is in the first quadrant. Coordinates:", x,y)
-elif x>0 and y<0:
-  print("The coordinate is in the second quadrant. Coordinates:", x,y)
-elif x<0 and y<0:
-  print("The coordinate is in the third quadrant. Coordinates:", x,y)
-elif x<0 and y>0:
-  print("The coordinate is in the forth quadrant. Coordinates:", x,y)
+# x=int(input("I'll need a first coordinate (x): "))
+# y=int(input("And a second one (y): "))
+# if x==0 and y!=0:
+#   print("The coordinate is on plane x. Coordinates:", x,y)
+# elif x!=0 and y==0:
+#   print("The coordinate is on plane y. Coordinates:", x,y)
+# elif x==0 and y==0:
+#   print("The coordinate is in the middle. Coordinates:", x,y)
+# elif x>0 and y>0:
+#   print("The coordinate is in the first quadrant. Coordinates:", x,y)
+# elif x>0 and y<0:
+#   print("The coordinate is in the second quadrant. Coordinates:", x,y)
+# elif x<0 and y<0:
+#   print("The coordinate is in the third quadrant. Coordinates:", x,y)
+# elif x<0 and y>0:
+#   print("The coordinate is in the forth quadrant. Coordinates:", x,y)
+
+
+
+E=int(input("your numer: "))
+if E<0:
+  print("It's a negative number.")
+  if E<0 and E>-10:
+    print("It's single digit.")
+  elif E<-9 and E>-100:
+    print("It's double digit.")
+  elif E<-99 and E>-1000:
+    print("It's triple digit.")
+  elif E<-999:
+    print("Quadruple and more digit numbers")
+
+elif E>0:
+  print("It's a pozitive number.")
+  if E>0 and E<10:
+    print("It's single digit.")
+  elif E>9 and E<100:
+    print("It's double digit.")
+  elif E>99 and E<1000:
+    print("It's triple digit.")
+  elif E>999:
+    print("Quadruple and more digit numbers")
+else:
+  print("Null")
