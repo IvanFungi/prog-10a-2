@@ -34,32 +34,51 @@
 
 
 
-D=int(input("Give me number a you please: "))
-if D==1:
- print("January")
-elif D==2:
-  print("February")
-elif D==3:
-  print("March")
-elif D==4:
-  print("April")
-elif D==5:
-  print("May")
-elif D==6:
-  print("June")
-elif D==7:
-  print("July")
-elif D==8:
-  print("August")
-elif D==9:
-  print("September")
-elif D==10:
-  print("October")
-elif D==11:
-  print("November")
-elif D==12:
-  print("December")
-elif D<1:
- print("Not a month")
-elif D>12:
-  print("Not a month")
+# D=int(input("Give me number a you please: "))
+# if D==1:
+#  print("January")
+# elif D==2:
+#   print("February")
+# elif D==3:
+#   print("March")
+# elif D==4:
+#   print("April")
+# elif D==5:
+#   print("May")
+# elif D==6:
+#   print("June")
+# elif D==7:
+#   print("July")
+# elif D==8:
+#   print("August")
+# elif D==9:
+#   print("September")
+# elif D==10:
+#   print("October")
+# elif D==11:
+#   print("November")
+# elif D==12:
+#   print("December")
+# elif D<1:
+#  print("Not a month")
+# elif D>12:
+#   print("Not a month")
+
+
+
+x=int(input("I'll need a first coordinate (x): "))
+y=int(input("And a second one (y): "))
+if x==0 and y!=0:
+  print("The coordinate is on plane x. Coordinates:", x,y)
+elif x!=0 and y==0:
+  print("The coordinate is on plane y. Coordinates:", x,y)
+elif x==0 and y==0:
+  print("The coordinate is in the middle. Coordinates:", x,y)
+elif x>0 and y>0:
+  print("The coordinate is in the first quadrant. Coordinates:", x,y)
+elif x>0 and y<0:
+  print("The coordinate is in the second quadrant. Coordinates:", x,y)
+elif x<0 and y<0:
+  print("The coordinate is in the third quadrant. Coordinates:", x,y)
+elif x<0 and y>0:
+  print("The coordinate is in the forth quadrant. Coordinates:", x,y)
