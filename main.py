@@ -251,15 +251,21 @@ print(T)
 
 
 
-xo=int(input("Gimme numbyr: "))
-ching2_0 = []
-ching = []
-chink = 0
-while chink<=xo:
-  chink+=1
-  if chink%2!=0:
-    ching.append(chink)
-  else:
-    ching2_0.append(chink)
-print("Here's all your odd numbers", ching)
-print("Here's all your even numbers", ching2_0)
+# xo=int(input("Gimme numbyr: "))
+# ching2_0 = []
+# ching = []
+# chink = 0
+# while chink<=xo:
+#   chink+=1
+#   if chink%2!=0:
+#     ching.append(chink)
+#   else:
+#     ching2_0.append(chink)
+# print("Here's all your odd numbers", ching)
+# print("Here's all your even numbers", ching2_0)
+
+
+
+def materialuAprekins(garums, platums, augstums, skaits):
+  print(garums)
+print(materialuAprekins(4,65,2,12))
